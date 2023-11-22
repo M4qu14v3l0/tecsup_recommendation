@@ -1,4 +1,12 @@
-.navbar_elements{
+.navbar_container {
+    height: 110px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.navbar_elements {
     display: flex;
     justify-content: space-around;
+
 }

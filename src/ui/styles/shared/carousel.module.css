@@ -1,0 +1,10 @@
+.carousel_container {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel_slide {
+    height: 500px;
+    background: #882525;
+    text-align: center;
+}

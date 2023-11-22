@@ -1,0 +1,35 @@
+.highlightedText_h2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.highlightedText_span {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.highlightedText_span {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.highlightedText_span::before {
+    /* Highlight color */
+    background-color: var(--primary);
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 100%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    /* transform: rotate(-2deg); */
+}
