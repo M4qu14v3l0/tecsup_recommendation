@@ -1,10 +1,14 @@
 .carousel_container {
     display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
     gap: 10px;
 }
 
 .carousel_slide {
     height: 500px;
-    background: #882525;
+    width: 480px;
+    box-shadow: 0px 4px 4px 2px #00000040;
+    background: red;
     text-align: center;
 }

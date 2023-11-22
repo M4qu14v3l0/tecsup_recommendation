@@ -1,4 +1,4 @@
-import Carrousel from '@/ui/shared/Carrousel'
+import Carousel from '@/ui/shared/Carousel'
 import HighlightedText from '@/ui/shared/HighlightedText'
 
 import styles from '@/ui/styles/home.module.css'
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className={`margin_container`}>
       <HighlightedText firstText='Cursos con' highlightedText='mayor calificación'/>
-      <Carrousel elements={courses}/>
+      <Carousel elements={courses}/>
     </main>
   )
 }
