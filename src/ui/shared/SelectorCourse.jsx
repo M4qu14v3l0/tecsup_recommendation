@@ -113,7 +113,7 @@ export default function SelectorCourse({elements}) {
                     <p className={styles.sc_time}>{item.time} horas</p>
                 </div>
                 <div className={styles.sc_button_container}>
-                    <Link href='#' className={styles.sc_button}>{'Ver más >'}</Link>
+                    <Link href={`/curso/${item.id}`} className={styles.sc_button}>{'Ver más >'}</Link>
                 </div> 
                 </div>
             )
