@@ -38,7 +38,7 @@ export default function Carousel({elements}) {
                 <p className={styles.carousel_time}>{item.time} horas</p>
               </div>
               <div className={styles.carousel_button_container}>
-                <Link href='#' className={styles.carousel_button}>{'Ver más >'}</Link>
+                <Link href={`/curso/${item.id}`} className={styles.carousel_button}>{'Ver más >'}</Link>
                 <Image src={'/icons/hearth.svg'} alt='Like' width={40} height={40}/>
               </div> 
             </div>
