@@ -58,16 +58,22 @@
 
 .info_left {
     grid-area: side_left;
-
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .info_right {
     grid-area: side_right;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 
+.course_description {
+    font-size: 16px;
+    font-weight: 300;
+}
 
 .sc_stars {
     display: flex;
@@ -87,7 +93,10 @@
     align-items: center;
 }
 
-.course_description {}
+.info_left{
+    font-size: 20px;
+    font-weight: 400;
+}
 
 .course_modules_title {
     background-color: #11AEED;
@@ -99,6 +108,23 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
+}
+
+.course_module{
+    padding: 16px 20px;
+    margin: 8px 0px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.20);
+    display: flex;
+    justify-content: space-between;
+}
+
+.course_module p{
+    color: #11AEED;
+}
+
+.course_module_duration{
+    font-size: 16px;
 }
 
 .course_like {
@@ -129,7 +155,6 @@
 .course_learning {
     width: 300px;
     background-color: #F0DB1A;
-    ;
     line-height: 36px;
     font-weight: 700;
     height: 55px;
@@ -140,5 +165,16 @@
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 4px 0px #00000040;
+}
 
+.course_learnings{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course_learn{
+    display: flex;
+    font-size: 16px;
+    font-weight: 300;
 }

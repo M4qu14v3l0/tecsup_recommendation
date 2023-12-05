@@ -10,7 +10,6 @@ export default function Navbar() {
             <li><Link href={"/"}><Image src={'/logo/logo.svg'} alt="TECSUP LOGO" width={150} height={40} style={{objectFit: 'contain'}}/></Link></li>
             <li><Image src={'/icons/user.svg'} alt="user login" width={40} height={40} style={{objectFit: 'contain'}}/></li>
         </ul>
-
     </nav>
   )
 }
