@@ -180,6 +180,7 @@ export default function Curso({params}) {
           <div className={styles.course_banner_title}>
             <h2>Curso de <span>{course.name}</span></h2>
           </div>
+          <Image className={styles.course_banner_heart} src={'/icons/hearth.svg'} alt='Like' width={40} height={40}/>
         </div>
         <div className={styles.info_course_container}>
           <div className={styles.info_left}>
@@ -210,8 +211,8 @@ export default function Curso({params}) {
 
           <div className={styles.info_right}>
             <div className={styles.course_like}>
-              <p>¿Ya llevaste este curso?<span>Déjanos tu like.</span></p>
-              <Image src={'/icons/like.svg'} width={40} height={40} alt='like'/>
+              <p>¿Ya llevaste este curso?<span>Califícanos</span></p>
+              <StarRating stars={course.stars}/>
             </div>
             <div className={styles.course_learning}>
               Lo que aprenderás

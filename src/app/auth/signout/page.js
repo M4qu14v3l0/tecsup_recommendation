@@ -22,7 +22,7 @@ export default function Register() {
                <Link className={styles.auth_button} href='/'>Registrarse</Link>
             </div>
             <div>
-               ¿Ya tienes correo de Tecsup? <Link href='/auth'>Inicia sesión aquí</Link>
+               ¿Ya tienes correo de Tecsup? <Link href='/auth/signin'>Inicia sesión aquí</Link>
             </div>
          </div>
          

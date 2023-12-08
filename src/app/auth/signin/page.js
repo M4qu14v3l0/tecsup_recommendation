@@ -20,7 +20,7 @@ export default function Login() {
                <Link className={styles.auth_button} href='/'>Iniciar sesión</Link>
             </div>
             <div>
-               ¿No tienes correo de Tecsup? <Link href='/register'>Regístrate aquí</Link>
+               ¿No tienes correo de Tecsup? <Link href='/auth/signout'>Regístrate aquí</Link>
             </div>
          </div>
          
