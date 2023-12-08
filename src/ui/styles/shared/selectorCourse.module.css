@@ -34,18 +34,27 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
-
-
     height: 460px;
     width: 380px;
     text-align: center;
-
     scroll-snap-align: start;
     scroll-margin: 10px;
-
     text-align: left;
 }
 
+.absolute_image_heart{
+    position: relative;
+}
+
+.heart{
+    position: absolute;
+    padding: 8px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 12px;
+    top: 12px;
+}
 
 .sc_info_container {
     display: flex;

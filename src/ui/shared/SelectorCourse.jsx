@@ -94,10 +94,10 @@ export default function SelectorCourse({elements}) {
     <>
         <div className={styles.title_container}>
             <h2 className={styles.title_h2}>
-                Una amplia
+                Cursos con
             </h2>
             <span className={styles.subtitle_span}>
-            selección de cursos
+             mayor calificación
             </span>
         </div>
         <section className={styles.selector_container}>
@@ -105,7 +105,10 @@ export default function SelectorCourse({elements}) {
             {
             elements.map((item , index) => (
                 <div key={index} className={styles.sc_slide}>
-                <Image src={item.img} width={380} height={240} alt='tecsup curso' style={{objectFit:'cover'}}/>
+                    <div className={styles.absolute_image_heart}>
+                        <Image className={styles.heart} src={'/icons/hearth.svg'} alt='Like' width={40} height={40}/>
+                        <Image src={item.img} width={380} height={240} alt='tecsup curso' style={{objectFit:'cover'}}/>
+                    </div>
                 <div className={styles.sc_info_container}>
                     <h3 className={styles.sc_h3}>{item.name}</h3>
                     <p className={styles.sc_description}>{item.description}</p>
@@ -143,10 +146,10 @@ export default function SelectorCourse({elements}) {
             </div>
             <div className={styles.highlightedText_container}>
                 <h2 className={styles.highlightedText_h2}>
-                    ¿Quieres ver los cursos
+                    ¿Quieres ver tus cursos
                 </h2>
                 <span className={styles.highlightedText_span}>
-                    más calificados?
+                    favoritos?
                 </span>
             </div>
         </aside>

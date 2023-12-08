@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className={`margin_container`}>
-      <HighlightedText firstText='Cursos con' highlightedText='mayor calificación'/>
+      <HighlightedText highlightedText='¡Cursos recomendados' firstText='para ti!' />
       <Carousel elements={courses}/>
       <SelectorCourse elements={courses}/>
     </main>

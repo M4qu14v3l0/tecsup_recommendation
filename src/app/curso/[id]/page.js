@@ -173,7 +173,6 @@ export default function Curso({params}) {
     );
   };
 
-
   return (
     <section className={styles.course_container}>
         <div className={styles.course_banner}>
@@ -182,7 +181,6 @@ export default function Curso({params}) {
             <h2>Curso de <span>{course.name}</span></h2>
           </div>
         </div>
-
         <div className={styles.info_course_container}>
           <div className={styles.info_left}>
             <div className={styles.course_description}>
@@ -221,15 +219,13 @@ export default function Curso({params}) {
             <div className={styles.course_learnings}>
               {course.learnings.map((learning) => (
                 <div key={learning.id} className={styles.course_learn}>
-                  <Image src={'/icons/check.svg'} width={40} height={40} alt='check'/>
+                  <Image src={'/icons/check.svg'} width={28} height={28} alt='check'/>
                   <p>{learning.name}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        
-
     </section>
   )
 }
